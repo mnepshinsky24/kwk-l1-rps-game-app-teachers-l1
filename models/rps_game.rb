@@ -2,7 +2,9 @@ class RPSGame
 
   # Write your code here!
 
-
+def initialize(play)
+  
+  raise PlayTypeError 
 
   class PlayTypeError < StandardError
     # Don't be alarmed! This is a class set inside a class, but works just fine in Ruby
@@ -10,3 +12,5 @@ class RPSGame
   end
 
 end
+
+play1 = RPSGame.new
